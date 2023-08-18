@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
+    <script src="./script.js" defer></script>
+    <title>Тест</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header_logo">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+            <div class="menu_nav">
+                <a href="#">Головна</a>
+                <a href="#">Галерея</a>
+                <a href="#">Проекти</a>
+                <a href="#">Сертифікати</a>
+                <a href="#">Контактни</a>
+            </div>
+            <div class="header_burger">
+                <span></span>
+            </div>
+        </header>
+    </div>
+    <main class="wrapper">
+
+        <!---------- section__slider ----------->
+        <section class="section__slider">
+            <div class="slider_project animate">
+                <div class="slider_project-wrapper">
+                    <div class="slider_project-title">
+                        <h2 class="animate">PROJECT</h2>
+                        <h2 class="title-bolt animate">HOME</h2>
+                    </div>
+                    <div class="slider_project-arrow">
+                        <button id="prev" class="arrow prev left">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21 11.5C21 11.2239 20.7761 11 20.5 11L4.5 11C4.22386 11 4 11.2239 4 11.5C4 11.7761 4.22386 12 4.5 12L20.5 12C20.7761 12 21 11.7761 21 11.5Z" fill="#333333"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M8.35355 7.64645C8.15829 7.45118 7.84171 7.45118 7.64645 7.64645L3.79289 11.5L7.64645 15.3536C7.84171 15.5488 8.15829 15.5488 8.35355 15.3536C8.54882 15.1583 8.54882 14.8417 8.35355 14.6464L5.20711 11.5L8.35355 8.35355C8.54882 8.15829 8.54882 7.84171 8.35355 7.64645Z" fill="#333333"/>
+                            </svg>
+                        </button>
+                        <button id="next" class="arrow right">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11.4998C3 11.2236 3.22386 10.9998 3.5 10.9998L19.5 10.9998C19.7761 10.9998 20 11.2236 20 11.4998C20 11.7759 19.7761 11.9998 19.5 11.9998L3.5 11.9998C3.22386 11.9998 3 11.7759 3 11.4998Z" fill="#333333"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6464 7.6462C15.8417 7.45094 16.1583 7.45094 16.3536 7.6462L20.2071 11.4998L16.3536 15.3533C16.1583 15.5486 15.8417 15.5486 15.6464 15.3533C15.4512 15.158 15.4512 14.8415 15.6464 14.6462L18.7929 11.4998L15.6464 8.35331C15.4512 8.15805 15.4512 7.84146 15.6464 7.6462Z" fill="#333333"/>
+                            </svg>
+                        </button>
+                        <div class="slider_project-line"></div>
+                    </div>
+                    <div class="slider_number">
+                        <div>
+                            <span class="number">01</span>
+                        </div>
+                        <div class="line"></div>
+                        <div>
+                            <span>02</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slider_img active animate">
+                <img class="imgSlide" src="./img/slider.jpg" alt="slider">
+                <button type="button">
+                    <div class="button-arrow">
+                        <span>Поглянути</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11.4998C3 11.2236 3.22386 10.9998 3.5 10.9998L19.5 10.9998C19.7761 10.9998 20 11.2236 20 11.4998C20 11.7759 19.7761 11.9998 19.5 11.9998L3.5 11.9998C3.22386 11.9998 3 11.7759 3 11.4998Z" fill="#333333"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6464 7.6462C15.8417 7.45094 16.1583 7.45094 16.3536 7.6462L20.2071 11.4998L16.3536 15.3533C16.1583 15.5486 15.8417 15.5486 15.6464 15.3533C15.4512 15.158 15.4512 14.8415 15.6464 14.6462L18.7929 11.4998L15.6464 8.35331C15.4512 8.15805 15.4512 7.84146 15.6464 7.6462Z" fill="#333333"/>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+            <div class="slider_img animate">
+                <img class="imgSlide" src="" alt="slider">
+                <button type="button">
+                    <div class="button-arrow">
+                        <span>Поглянути</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11.4998C3 11.2236 3.22386 10.9998 3.5 10.9998L19.5 10.9998C19.7761 10.9998 20 11.2236 20 11.4998C20 11.7759 19.7761 11.9998 19.5 11.9998L3.5 11.9998C3.22386 11.9998 3 11.7759 3 11.4998Z" fill="#333333"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6464 7.6462C15.8417 7.45094 16.1583 7.45094 16.3536 7.6462L20.2071 11.4998L16.3536 15.3533C16.1583 15.5486 15.8417 15.5486 15.6464 15.3533C15.4512 15.158 15.4512 14.8415 15.6464 14.6462L18.7929 11.4998L15.6464 8.35331C15.4512 8.15805 15.4512 7.84146 15.6464 7.6462Z" fill="#333333"/>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </section>
+
+         <!---------- section__about_company ----------->
+        <section class="about_company">
+            <div class="about_company-wrapper">
+                <div class="about_company-img">
+                    <div class="about_company-example">
+                        <img class="animate" src="./img/example1.jpg" alt="example">
+                        <img class="animate" src="./img/example2.jpg" alt="example">
+                    </div>
+                    <div class="about_company-project">
+                        <img class="animate" src="./img/example3.jpg" alt="example">
+                    </div>
+                </div>
+                <div class="about_company-content">
+                    <h2>Про компанію</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    <button type="button">
+                        <div class="button-arrow">
+                            <span>читати</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11.4998C3 11.2236 3.22386 10.9998 3.5 10.9998L19.5 10.9998C19.7761 10.9998 20 11.2236 20 11.4998C20 11.7759 19.7761 11.9998 19.5 11.9998L3.5 11.9998C3.22386 11.9998 3 11.7759 3 11.4998Z" fill="#333333"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6464 7.6462C15.8417 7.45094 16.1583 7.45094 16.3536 7.6462L20.2071 11.4998L16.3536 15.3533C16.1583 15.5486 15.8417 15.5486 15.6464 15.3533C15.4512 15.158 15.4512 14.8415 15.6464 14.6462L18.7929 11.4998L15.6464 8.35331C15.4512 8.15805 15.4512 7.84146 15.6464 7.6462Z" fill="#333333"/>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!---------- section__main tasks ----------->
+        <section class="main_tasks">
+            <h2>Основні завдання</h2>
+            <div class="main_tasks-container">
+                <div class="main_tasks-item">
+                    <p class="tasks_number animate">1</p>
+                    <p class="tasks_content animate">Створення комфортних умов та підвищення якості обслуговування клієнтів</p>
+                </div>
+                <div class="main_tasks-item">
+                    <p class="tasks_number animate">2</p>
+                    <p class="tasks_content animate">Постійно вдосконалювати якість послуг шляхом навчання персоналу, закупівлі нового обладнання та посиленої реклами на ринку</p>
+                </div>
+            </div>
+        </section>
+
+        <!---------- section__our_projects ----------->
+        <section class="our_projects">
+            <h2>Наші проекти</h2>
+            <div class="our_projects-container">
+                <div class="our_projects-item">
+                    <div class="leisure_center">
+                        <img src="./img/our_projects1.jpg" alt="projects">
+                        <div class="leisure_center-details">
+                            <h2>Досуговий центр</h2>
+                            <button type="button">
+                                <div class="button-arrow">
+                                    <span>Детальніше</span>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11.4998C3 11.2236 3.22386 10.9998 3.5 10.9998L19.5 10.9998C19.7761 10.9998 20 11.2236 20 11.4998C20 11.7759 19.7761 11.9998 19.5 11.9998L3.5 11.9998C3.22386 11.9998 3 11.7759 3 11.4998Z" fill="#333333"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6464 7.6462C15.8417 7.45094 16.1583 7.45094 16.3536 7.6462L20.2071 11.4998L16.3536 15.3533C16.1583 15.5486 15.8417 15.5486 15.6464 15.3533C15.4512 15.158 15.4512 14.8415 15.6464 14.6462L18.7929 11.4998L15.6464 8.35331C15.4512 8.15805 15.4512 7.84146 15.6464 7.6462Z" fill="#333333"/>
+                                    </svg>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./img/our_projects2.jpg" alt="projects">
+                    </div>
+                </div>
+                <div class="our_projects-item">
+                    <div class="hide">
+                        <img src="./img/our_projects3.jpg" alt="projects">
+                    </div>
+                    <div class="hide">
+                        <img class="hide" src="./img/our_projects4.jpg" alt="projects">
+                    </div>
+                    <div class="hide">
+                        <img class="hide" src="./img/our_projects5.jpg" alt="projects">
+                    </div>
+                </div>
+                <div class="our_projects-button">
+                    <button class="button" type="button">
+                        <div class="button-arrow">
+                            <span>Всі проекти</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11.4998C3 11.2236 3.22386 10.9998 3.5 10.9998L19.5 10.9998C19.7761 10.9998 20 11.2236 20 11.4998C20 11.7759 19.7761 11.9998 19.5 11.9998L3.5 11.9998C3.22386 11.9998 3 11.7759 3 11.4998Z" fill="#333333"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6464 7.6462C15.8417 7.45094 16.1583 7.45094 16.3536 7.6462L20.2071 11.4998L16.3536 15.3533C16.1583 15.5486 15.8417 15.5486 15.6464 15.3533C15.4512 15.158 15.4512 14.8415 15.6464 14.6462L18.7929 11.4998L15.6464 8.35331C15.4512 8.15805 15.4512 7.84146 15.6464 7.6462Z" fill="#333333"/>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!---------- section__form ----------->
+        <section class="section_form">
+            <h2>Зв'язатися з нами</h2>
+            <div class="section_form-container">
+                <form class="form" action="#">
+                    <label for="#">
+                        <input type="text" placeholder="Iм’я" id="#" tabindex="1">
+                    </label>
+                    <label class="label_placeholder" for="#">
+                        <input type="tel" id="#" tabindex="2" maxlength="13" required>
+                        <span class="placeholder">Номер телефона</span>
+                    </label>
+                    <label class="label_placeholder" for="#">
+                        <input type="email" id="#" tabindex="3" invalid required>
+                        <span class="placeholder">Email</span>
+                    </label>
+                    <label for="#">
+                        <input type="text" placeholder="товар/послуга, що цікавить" id="#" tabindex="1">
+                    </label>
+                    <label class="label_placeholder" for="#">
+                        <textarea class="form__message" name="comment" rows="4" cols="6" id="#" tabindex="2" required></textarea>
+                        <span class="placeholder">Повідомлення</span>
+                    </label>
+                </form>
+                <div class="section_form-img">
+                    <img src="./img/form.jpg" alt="form">
+                </div>
+            </div>
+            <div class="section_form-privacy">
+                <p>Надсилаючи заявку Ви погоджуєтесь з політикою конфіденційності</p>
+            </div>
+            <div class="section__form-button">
+                <button class="button" type="button">
+                    <div class="button-arrow">
+                        <span>Відправити</span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3 11.4998C3 11.2236 3.22386 10.9998 3.5 10.9998L19.5 10.9998C19.7761 10.9998 20 11.2236 20 11.4998C20 11.7759 19.7761 11.9998 19.5 11.9998L3.5 11.9998C3.22386 11.9998 3 11.7759 3 11.4998Z" fill="#333333"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6464 7.6462C15.8417 7.45094 16.1583 7.45094 16.3536 7.6462L20.2071 11.4998L16.3536 15.3533C16.1583 15.5486 15.8417 15.5486 15.6464 15.3533C15.4512 15.158 15.4512 14.8415 15.6464 14.6462L18.7929 11.4998L15.6464 8.35331C15.4512 8.15805 15.4512 7.84146 15.6464 7.6462Z" fill="#333333"/>
+                        </svg>
+                    </div>
+                </button>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <!---------- section__footer ----------->
+    <footer class="footer_wrapper">
+        <div class="footer_container wrapper">
+            <div class="footer_logo">
+                <img src="./img/logo.svg" alt="logo">
+            </div>
+            <div class="footer_menu">
+                <div class="menu_information">
+                    <h3>Інформація</h3>
+                    <a href="#">Головна</a>
+                    <a href="#">Галерея</a>
+                    <a href="#">Проекти</a>
+                    <a href="#">Сертифікати</a>
+                    <a href="#">Контакти</a>
+                </div>
+                <div class="menu_contacts">
+                    <h3>Контакти</h3>
+                    <div class="menu_contacts-location">
+                        <svg width="20" height="20" fill="white" viewBox="0 0 128 128" xml:space="preserve"><g><path d="M97.8,15C79.1-3.6,48.9-3.6,30.2,15c-18.6,18.6-18.6,48.9,0,67.6L64,115.6l33.7-33.1l0,0C116.4,63.9,116.4,33.6,97.8,15z    M92.1,76.8L64,104.4L35.9,76.9c-7.5-7.5-11.6-17.5-11.6-28.1s4.1-20.6,11.6-28.1S53.4,9,64,9s20.6,4.1,28.1,11.6   s11.6,17.5,11.6,28.1C103.8,59.4,99.6,69.3,92.1,76.8z" stroke="white"/><path d="M64,28.3c-11.3,0-20.4,9.2-20.4,20.4S52.7,69.2,64,69.2S84.4,60,84.4,48.8S75.3,28.3,64,28.3z M64,61.2   c-6.8,0-12.4-5.6-12.4-12.4S57.2,36.3,64,36.3s12.4,5.6,12.4,12.4S70.8,61.2,64,61.2z" stroke="white"/><rect height="8" width="74" x="27" y="119"/></g>
+                        </svg>
+                        <div class="location-adress">
+                            <span>100000, Республіка Казахстан,</span>
+                            <span>місто Караганда, вул. Телевізійна 10</span>
+                        </div>
+                    </div>
+                    <div class="menu_contacts-tel">
+                        <a href="tel:+38000000000">
+                            <svg class="link" width="25" height="25" fill="none" viewBox="0 0 95 95">
+                                <path d="M66.1154 55.9473L53.1104 58.4674C44.3246 54.0587 38.8991 48.9932 35.741 41.098L38.1727 28.0551L33.5777 15.8333H21.7317C18.1694 15.8333 15.365 18.7767 15.8988 22.2979C17.2252 31.0869 21.1412 47.0257 32.5829 58.4674C44.5994 70.4839 61.9088 75.6979 71.4336 77.7727C75.1128 78.5717 78.3751 75.7042 78.3751 71.9366V60.6181L66.1154 55.9473Z" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </a>
+                        <a href="tel:+38000000000">+38000000000</a>
+                    </div>
+                    <div class="menu_contacts-tel">
+                        <a href="mailto:contact@hlegals.net">
+                            <svg viewBox="0 0 30 30" width="23" height="23" fill="white"><path d="M26,6H6A3,3,0,0,0,3,9V23a3,3,0,0,0,3,3H26a3,3,0,0,0,3-3V9A3,3,0,0,0,26,6ZM6,8H26a1,1,0,0,1,1,1v.46l-10.45,7a1,1,0,0,1-1.1,0L5,9.46V9A1,1,0,0,1,6,8ZM26,24H6a1,1,0,0,1-1-1V11.87l9.34,6.22a3,3,0,0,0,3.32,0L27,11.87V23A1,1,0,0,1,26,24Z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:contact@hlegals.net">mail@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <!---------- section__social ----------->
+            <div class="footer_social">
+                <h3>Соціальні мережі</h3>
+                <div class="social">
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" width="24px" height="24px" fill="white"><path d="M16.403,9H14V7c0-1.032,0.084-1.682,1.563-1.682h0.868c0.552,0,1-0.448,1-1V3.064c0-0.523-0.401-0.97-0.923-1.005C15.904,2.018,15.299,1.999,14.693,2C11.98,2,10,3.657,10,6.699V9H8c-0.552,0-1,0.448-1,1v2c0,0.552,0.448,1,1,1l2-0.001V21c0,0.552,0.448,1,1,1h2c0.552,0,1-0.448,1-1v-8.003l2.174-0.001c0.508,0,0.935-0.381,0.993-0.886l0.229-1.996C17.465,9.521,17.001,9,16.403,9z"/></svg>
+                    </a>
+                    <a href="#">
+                        <svg viewBox="0,0,256,256" width="24px" height="24px" fill="white"><g fill="white" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M50.0625,10.4375c-1.84766,0.82031 -3.82812,1.37109 -5.91016,1.62109c2.125,-1.27344 3.75781,-3.28906 4.52344,-5.6875c-1.98437,1.17578 -4.19141,2.03125 -6.53125,2.49219c-1.875,-2 -4.54687,-3.24609 -7.50391,-3.24609c-5.67969,0 -10.28516,4.60156 -10.28516,10.28125c0,0.80469 0.09375,1.58984 0.26953,2.34375c-8.54687,-0.42969 -16.12109,-4.52344 -21.19531,-10.74609c-0.88672,1.52344 -1.39062,3.28906 -1.39062,5.17187c0,3.56641 1.8125,6.71484 4.57422,8.5625c-1.6875,-0.05469 -3.27344,-0.51953 -4.66016,-1.28906c0,0.04297 0,0.08594 0,0.12891c0,4.98438 3.54688,9.13672 8.24609,10.08594c-0.85937,0.23438 -1.76953,0.35938 -2.70703,0.35938c-0.66406,0 -1.30859,-0.0625 -1.9375,-0.1875c1.3125,4.08203 5.10938,7.0625 9.60547,7.14453c-3.51562,2.75781 -7.94922,4.39844 -12.76953,4.39844c-0.83203,0 -1.64844,-0.04687 -2.44922,-0.14453c4.54687,2.92188 9.95312,4.62109 15.76172,4.62109c18.91406,0 29.25781,-15.66797 29.25781,-29.25391c0,-0.44531 -0.01172,-0.89453 -0.02734,-1.33203c2.00781,-1.44922 3.75,-3.26172 5.12891,-5.32422z"></path></g></g></svg>
+                    </a>
+                    <a href="#">
+                        <svg viewBox="0 0 72 72" width="24px" height="24px" fill="white"><path d="M46.603,14C57.173,14,58,14.827,58,25.397v21.277C58,57.178,57.178,58,46.674,58H25.326C14.822,58,14,57.178,14,46.674	V25.326C14,14.822,14.822,14,25.326,14H46.603z M30.202,44.705V31.316h-4.161v13.389H30.202z M28.122,29.401	c1.337,0,2.425-1.088,2.425-2.426c0-1.337-1.088-2.425-2.425-2.425c-1.34,0-2.426,1.086-2.426,2.425S26.78,29.401,28.122,29.401z M45.812,44.705v-7.343c0-3.605-0.779-6.378-4.992-6.378c-2.024,0-3.381,1.11-3.937,2.162h-0.056v-1.829h-3.992v13.389h4.158v-6.624	c0-1.746,0.333-3.437,2.498-3.437c2.134,0,2.162,1.997,2.162,3.55v6.511H45.812z"/></svg>
+                    </a>
+                    <a href="#">
+                        <svg viewBox="0 0 32 32" width="24px" height="24px" fill="white"><path d="M 16.09375 4 C 11.01675 4 6 7.3833281 6 12.861328 C 6 16.344328 7.9584844 18.324219 9.1464844 18.324219 C 9.6364844 18.324219 9.9199219 16.958266 9.9199219 16.572266 C 9.9199219 16.112266 8.7460938 15.131797 8.7460938 13.216797 C 8.7460938 9.2387969 11.774359 6.4199219 15.693359 6.4199219 C 19.063359 6.4199219 21.556641 8.3335625 21.556641 11.851562 C 21.556641 14.478563 20.501891 19.40625 17.087891 19.40625 C 15.855891 19.40625 14.802734 18.516234 14.802734 17.240234 C 14.802734 15.370234 16 13.558906 16 11.628906 C 16 8.3529063 11.462891 8.94725 11.462891 12.90625 C 11.462891 13.73725 11.5665 14.657063 11.9375 15.414062 C 11.2555 18.353063 10 23.037406 10 26.066406 C 10 27.001406 10.133656 27.921422 10.222656 28.857422 C 10.390656 29.045422 10.307453 29.025641 10.564453 28.931641 C 13.058453 25.517641 12.827078 24.544172 13.955078 20.076172 C 14.564078 21.234172 16.137766 21.857422 17.384766 21.857422 C 22.639766 21.857422 25 16.736141 25 12.119141 C 25 7.2061406 20.75475 4 16.09375 4 z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer_line"></div>
+        <div class="all_rights_reservedr">
+            <p>© 2019 Digital Project. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
