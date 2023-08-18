@@ -243,6 +243,24 @@
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .footer_container {
+    padding-top: 45px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer_container {
+    padding-top: 35px;
+  }
+}
+
+@media screen and (max-width: 878px) {
+  .footer_container.wrapper {
+    padding: 35px 0 0 0;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .footer_container {
     -webkit-box-orient: vertical;
@@ -271,6 +289,15 @@
   }
   .footer_social h3 {
     display: none;
+  }
+}
+
+@media screen and (max-width: 395px) {
+  .footer_logo {
+    width: 50%;
+  }
+  .footer_social {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=footer.css.map */

@@ -667,10 +667,6 @@ h2 {
          line-height: 29px;
       }
    }
-
-   .footer_container {
-      padding-top: 45px;
-   }
 }
 
 @media screen and (max-width: 992px) {
@@ -699,16 +695,6 @@ h2 {
             padding: 10px 20px;
          }     
       }
-   }
-
-   .form {
-      input, textarea {
-         line-height: 23px;
-      }
-   }
-
-   .footer_container {
-      padding-top: 35px;
    }
 }
 
@@ -819,10 +805,6 @@ h2 {
       input, textarea {
          line-height: 20px;
       }
-   }
-
-   .footer_container.wrapper {
-      padding: 35px 0 0 0;
    }
    
    @keyframes leftSide {
@@ -986,7 +968,7 @@ h2 {
    } 
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 395px) {
    h2 {
       line-height: 48px;
    }
@@ -1000,7 +982,7 @@ h2 {
    }
 
   .slider_number {
-     top: 65%;
+     top: 61%;
      left: 30%;
    }
 
@@ -1054,21 +1036,9 @@ h2 {
          }
       }
    } 
-   
-   .footer_logo { 
-      width: 50%;
-   }
-
-   .footer_social {
-      width: 50%;
-   }
 }
 
-@media screen and (max-width: 390px) {
-   .slider_number {
-      top: 62%;
-    }
-}
+
     
    
    
