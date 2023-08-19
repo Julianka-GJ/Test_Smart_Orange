@@ -178,6 +178,10 @@ h2 {
    display: block;
 }
 
+.mob-version {
+   display: none;
+}
+
  //------------- section__about_company -----------------------
 
 .about_company {
@@ -280,7 +284,7 @@ h2 {
       font-weight: 900;
       color: $grey8; 
       margin-right: 20px;
-      transform: translate(0, -120%);
+      transform: translate(0, -100%);
       opacity: 0;
       transition: all ease .8s;
    }
@@ -295,7 +299,7 @@ h2 {
       font-weight: 400;
       color: $grey1;
       line-height: 32px;
-      transform: translate(0, 120%);
+      transform: translate(0, 100%);
       opacity: 0;
       transition: all ease .8s;
    }
@@ -723,6 +727,7 @@ h2 {
    .slider_img {
       width: 75%; 
       position: relative;
+      margin-bottom: 15px;
    }
 
    .slider_project-arrow {
@@ -745,9 +750,13 @@ h2 {
    }
 
    .slider_number {
-      position: absolute;
-      left: 40%;
-      top: 108%;
+      .hide {
+         display: none;
+      }
+   }
+
+   .mob-version {
+      display: flex;
    }
 
    .about_company {
@@ -778,17 +787,9 @@ h2 {
 
    .main_tasks-item {
       width: 60%;
-
-      .tasks_number {
-         transform: translate(-120%, 0);
-      }
-
+   
       .tasks_number.element-show {
          font-size: 170px;
-      }
-
-      .tasks_content {
-         transform: translate(120%, 0);
       }
    }
 
@@ -836,10 +837,6 @@ h2 {
         top: 57%;
       }
    }
-
-  .slider_number {
-     top: 96%;
-  }
 
   .leisure_center {
       .leisure_center-details {
@@ -899,6 +896,10 @@ h2 {
 }
 
 @media screen and (max-width: 575px) {
+   .wrapper {
+      padding: 0 4%;
+   }
+
    h2 {
       font-size: 50px;
    }
@@ -909,13 +910,9 @@ h2 {
       }
    }
 
-  .slider_number {
-     top: 85%;
-   }
-
   .about_company {
       .about_company-wrapper {
-         width: 100%;
+         width: 95%;
 
          .about_company-example {
             gap: 10px;
@@ -929,6 +926,11 @@ h2 {
             img {
                width: 100%;
             }
+         }
+
+         .about_company-img {
+            gap: 10px;
+
          }
       }
    }
@@ -966,6 +968,33 @@ h2 {
          }
       }
    } 
+
+   @keyframes appearProject {
+      0% {
+         transform: scaleX(1.3) rotateY(180deg);
+         box-shadow: $shadow_hover;
+      }
+   
+      50% {
+         transform: scaleX(1.2);
+         box-shadow: $shadow_hover;
+   }
+      
+      75% {
+         transform: scaleX(1.1);
+         box-shadow: $shadow_hover;
+      }
+   
+      85% {
+         transform: scaleX(1.3);
+         box-shadow: $shadow_hover;
+   }
+   
+      100% {
+         transform: scaleX(1) rotateY(360deg);
+         box-shadow: $shadow_hover;
+      }
+   }
 }
 
 @media screen and (max-width: 395px) {
@@ -976,14 +1005,20 @@ h2 {
       margin-bottom: 70px;
    }
    .slider_project-arrow {
-      .right, .left {
-        top: 38%;
+      .arrow {
+         width: 43px;
+         height: 43px;
       }
-   }
 
-  .slider_number {
-     top: 61%;
-     left: 30%;
+      .right {
+        top: 38%;
+        left: 85%;
+      }
+
+      .left {
+         top: 38%;
+         right: 85%;
+      }
    }
 
    .main_tasks {
@@ -992,7 +1027,7 @@ h2 {
 
    .main_tasks-item {
       flex-direction: column;
-      width: 100%;
+      width: 95%;
 
       .tasks_number.element-show {
          font-size: 120px;
