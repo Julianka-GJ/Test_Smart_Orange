@@ -90,7 +90,7 @@ h2 {
    display: flex;
    width: 100%;
 
-    .arrow {
+   .arrow {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -101,22 +101,22 @@ h2 {
       cursor: pointer;
       transition-duration: .7s;
    
-         &:hover {
-            box-shadow: $shadow_hover;
-            background-color: $grey3;
-         }
-    }
+      &:hover {
+         box-shadow: $shadow_hover;
+         background-color: $grey3;
+      }
+   }
 
-    .right {
+   .right {
       margin-left: 20px;
-    }
+   }
 
     .slider_project-line {
       align-self: center;
       flex-grow: 1;
       height: 1px;
       background-color: $grey8;
-    }
+   }
 }
 
 .slider_number {
@@ -955,7 +955,6 @@ h2 {
          display: none;
       }
    }
- 
 
   .leisure_center {
       .leisure_center-details {
@@ -1004,6 +1003,7 @@ h2 {
    .section__slider {
       margin-bottom: 70px;
    }
+
    .slider_project-arrow {
       .arrow {
          width: 43px;
@@ -1011,12 +1011,12 @@ h2 {
       }
 
       .right {
-        top: 38%;
+        top: 42%;
         left: 85%;
       }
 
       .left {
-         top: 38%;
+         top: 42%;
          right: 85%;
       }
    }

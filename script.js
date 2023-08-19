@@ -32,7 +32,7 @@
         });
       }
 
-      let options = { threshold: [0.6] };
+      let options = { threshold: [0.5] };
       let observer = new IntersectionObserver(onScrollElem, options);
       for (let elm of animItems) {
         observer.observe(elm);
