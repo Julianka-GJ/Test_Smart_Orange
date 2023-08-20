@@ -511,8 +511,8 @@ h2.element-show {
           animation-duration: 2s;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
-  -webkit-animation-name: expandUpRotete;
-          animation-name: expandUpRotete;
+  -webkit-animation-name: expandRotete;
+          animation-name: expandRotete;
 }
 
 .main_tasks-item .tasks_content {
@@ -1016,18 +1016,22 @@ h2.element-show {
   0% {
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
+    opacity: 0;
   }
   30% {
     -webkit-transform: translateY(-8%);
             transform: translateY(-8%);
+    opacity: 0.6;
   }
   50% {
     -webkit-transform: translateY(2%);
             transform: translateY(2%);
+    opacity: 0.8;
   }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    opacity: 1;
   }
 }
 
@@ -1035,56 +1039,36 @@ h2.element-show {
   0% {
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
+    opacity: 0;
   }
   30% {
     -webkit-transform: translateY(-8%);
             transform: translateY(-8%);
+    opacity: 0.6;
   }
   50% {
     -webkit-transform: translateY(2%);
             transform: translateY(2%);
+    opacity: 0.8;
   }
   100% {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    opacity: 1;
   }
 }
 
-@-webkit-keyframes expandUpRotete {
-  0% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  30% {
-    -webkit-transform: translateY(-8%);
-            transform: translateY(-8%);
-  }
+@-webkit-keyframes expandRotete {
   90% {
-    -webkit-transform: translateY(2%) rotateY(360deg);
-            transform: translateY(2%) rotateY(360deg);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
-@keyframes expandUpRotete {
-  0% {
-    -webkit-transform: translateY(100%);
-            transform: translateY(100%);
-  }
-  30% {
-    -webkit-transform: translateY(-8%);
-            transform: translateY(-8%);
-  }
+@keyframes expandRotete {
   90% {
-    -webkit-transform: translateY(2%) rotateY(360deg);
-            transform: translateY(2%) rotateY(360deg);
-  }
-  100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
   }
 }
 
