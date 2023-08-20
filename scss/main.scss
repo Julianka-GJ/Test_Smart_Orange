@@ -42,6 +42,12 @@ a {
 
 h2 {
    @include title_h2;
+   animation-duration: 3s;
+   animation-timing-function: ease-in-out; 
+}
+
+h2.element-show {
+   animation-name: expandUp;
 }
  
 @import "header";
@@ -284,14 +290,12 @@ h2 {
       font-weight: 900;
       color: $grey8; 
       margin-right: 20px;
-      transform: translate(0, -100%);
-      opacity: 0;
-      transition: all ease .8s;
    }
 
    .tasks_number.element-show {
-      transform: translate(0, 0);
-      opacity: 1;
+      animation-duration: 3s;
+      animation-timing-function: ease-in-out; 
+      animation-name: expandUp;
    }
 
    .tasks_content {
@@ -637,6 +641,22 @@ h2 {
    100% {
       transform: scaleX(1) rotateY(360deg);
       box-shadow: $shadow_hover;
+   }
+}
+
+@keyframes expandUp {
+   0% {
+       transform: translateY(100%);
+   }
+   30%{
+       transform: translateY(-8%);
+   }   
+   50%{
+       transform: translateY(2%);
+   }      
+   
+   100%{
+       transform: translateY(0);        
    }
 }
 

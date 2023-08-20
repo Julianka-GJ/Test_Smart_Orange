@@ -41,6 +41,15 @@ h2 {
   font-weight: 300;
   line-height: 64px;
   color: #bdbdbd;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+h2.element-show {
+  -webkit-animation-name: expandUp;
+          animation-name: expandUp;
 }
 
 .header {
@@ -495,17 +504,15 @@ h2 {
   font-weight: 900;
   color: #F2F2F2;
   margin-right: 20px;
-  -webkit-transform: translate(0, -100%);
-          transform: translate(0, -100%);
-  opacity: 0;
-  -webkit-transition: all ease .8s;
-  transition: all ease .8s;
 }
 
 .main_tasks-item .tasks_number.element-show {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  opacity: 1;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-name: expandUp;
+          animation-name: expandUp;
 }
 
 .main_tasks-item .tasks_content {
@@ -1013,6 +1020,44 @@ h2 {
             transform: scaleX(1) rotateY(360deg);
     -webkit-box-shadow: 0px 10px 5px -3px rgba(50, 50, 50, 0.75), 0px 15px 8px -3px rgba(155, 187, 204, 0.75), 0px 20px 10px -3px rgba(145, 200, 236, 0.75);
             box-shadow: 0px 10px 5px -3px rgba(50, 50, 50, 0.75), 0px 15px 8px -3px rgba(155, 187, 204, 0.75), 0px 20px 10px -3px rgba(145, 200, 236, 0.75);
+  }
+}
+
+@-webkit-keyframes expandUp {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  30% {
+    -webkit-transform: translateY(-8%);
+            transform: translateY(-8%);
+  }
+  50% {
+    -webkit-transform: translateY(2%);
+            transform: translateY(2%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes expandUp {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  30% {
+    -webkit-transform: translateY(-8%);
+            transform: translateY(-8%);
+  }
+  50% {
+    -webkit-transform: translateY(2%);
+            transform: translateY(2%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 

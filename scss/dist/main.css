@@ -37,6 +37,12 @@ h2 {
   font-weight: 300;
   line-height: 64px;
   color: #bdbdbd;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+h2.element-show {
+  animation-name: expandUp;
 }
 
 .header {
@@ -346,13 +352,11 @@ h2 {
   font-weight: 900;
   color: #F2F2F2;
   margin-right: 20px;
-  transform: translate(0, -100%);
-  opacity: 0;
-  transition: all ease 0.8s;
 }
 .main_tasks-item .tasks_number.element-show {
-  transform: translate(0, 0);
-  opacity: 1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-name: expandUp;
 }
 .main_tasks-item .tasks_content {
   font-size: 22px;
@@ -651,6 +655,20 @@ h2 {
   100% {
     transform: scaleX(1) rotateY(360deg);
     box-shadow: 0px 10px 5px -3px rgba(50, 50, 50, 0.75), 0px 15px 8px -3px rgba(155, 187, 204, 0.75), 0px 20px 10px -3px rgba(145, 200, 236, 0.75);
+  }
+}
+@keyframes expandUp {
+  0% {
+    transform: translateY(100%);
+  }
+  30% {
+    transform: translateY(-8%);
+  }
+  50% {
+    transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 .footer_wrapper {
