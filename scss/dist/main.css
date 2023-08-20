@@ -354,22 +354,15 @@ h2.element-show {
   margin-right: 20px;
 }
 .main_tasks-item .tasks_number.element-show {
-  animation-duration: 3s;
-  animation-timing-function: ease-in-out;
-  animation-name: expandUp;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-name: expandUpRotete;
 }
 .main_tasks-item .tasks_content {
   font-size: 22px;
   font-weight: 400;
   color: #333333;
   line-height: 32px;
-  transform: translate(0, 100%);
-  opacity: 0;
-  transition: all ease 0.8s;
-}
-.main_tasks-item .tasks_content.element-show {
-  transform: translate(0, 0);
-  opacity: 1;
 }
 
 .our_projects {
@@ -666,6 +659,20 @@ h2.element-show {
   }
   50% {
     transform: translateY(2%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes expandUpRotete {
+  0% {
+    transform: translateY(100%);
+  }
+  30% {
+    transform: translateY(-8%);
+  }
+  90% {
+    transform: translateY(2%) rotateY(360deg);
   }
   100% {
     transform: translateY(0);

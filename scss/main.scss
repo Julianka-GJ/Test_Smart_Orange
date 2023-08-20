@@ -293,9 +293,9 @@ h2.element-show {
    }
 
    .tasks_number.element-show {
-      animation-duration: 3s;
-      animation-timing-function: ease-in-out; 
-      animation-name: expandUp;
+      animation-duration: 2s;
+      animation-timing-function: linear;
+      animation-name: expandUpRotete;
    }
 
    .tasks_content {
@@ -303,14 +303,6 @@ h2.element-show {
       font-weight: 400;
       color: $grey1;
       line-height: 32px;
-      transform: translate(0, 100%);
-      opacity: 0;
-      transition: all ease .8s;
-   }
-
-   .tasks_content.element-show {
-      transform: translate(0, 0);
-      opacity: 1;
    }
 }
 
@@ -558,11 +550,9 @@ h2.element-show {
    0%, 50%, 100% {
      transform: rotate(0deg);
    }
-   
    10%, 30% {
      transform: rotate(-10deg);
    }
-   
    20%, 40% {
      transform: rotate(10deg);
    }
@@ -573,17 +563,14 @@ h2.element-show {
       transform: translateX(-50%);
       opacity: 0;
    }
-
    50% {
       transform: translateX(8%);
       opacity: 0.5;
    }
-
    95% {
       opacity: 0.7;
       transform: translateX(-2%);
    }
-
    100% {
       opacity: 1;
       transform: translateX(0%);
@@ -594,24 +581,19 @@ h2.element-show {
    0% {
       opacity: 0.3;
    }
-
    20% {
       opacity: 0.4;
    }
-
    30% {
       opacity: 0.5;
    }
-
    50% {
       opacity: 0.7;
    }
-
    95% {
       opacity: 1;
       transform: scaleX(1.02);
    }
-
    100% {
       transform: scaleX(1);
    }
@@ -622,22 +604,18 @@ h2.element-show {
       transform: scaleX(1.5) rotateY(180deg);
       box-shadow: $shadow_hover;
    }
-
    50% {
       transform: scaleX(1.3);
       box-shadow: $shadow_hover;
-}
-   
+   }
    75% {
       transform: scaleX(1.2);
       box-shadow: $shadow_hover;
    }
-
    85% {
       transform: scaleX(1.5);
       box-shadow: $shadow_hover;
-}
-
+   }
    100% {
       transform: scaleX(1) rotateY(360deg);
       box-shadow: $shadow_hover;
@@ -648,18 +626,31 @@ h2.element-show {
    0% {
        transform: translateY(100%);
    }
-   30%{
+   30% {
        transform: translateY(-8%);
    }   
-   50%{
+   50% {
        transform: translateY(2%);
    }      
-   
-   100%{
+   100% {
        transform: translateY(0);        
    }
 }
 
+@keyframes expandUpRotete {
+   0% {
+       transform: translateY(100%);
+   }
+   30% {
+       transform: translateY(-8%);
+   }        
+   90% {
+      transform: translateY(2%) rotateY(360deg);
+  }  
+   100% {
+       transform: translateY(0);        
+   }
+}
 
 @import "footer";
 

@@ -507,12 +507,12 @@ h2.element-show {
 }
 
 .main_tasks-item .tasks_number.element-show {
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-name: expandUp;
-          animation-name: expandUp;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-name: expandUpRotete;
+          animation-name: expandUpRotete;
 }
 
 .main_tasks-item .tasks_content {
@@ -520,17 +520,6 @@ h2.element-show {
   font-weight: 400;
   color: #333333;
   line-height: 32px;
-  -webkit-transform: translate(0, 100%);
-          transform: translate(0, 100%);
-  opacity: 0;
-  -webkit-transition: all ease .8s;
-  transition: all ease .8s;
-}
-
-.main_tasks-item .tasks_content.element-show {
-  -webkit-transform: translate(0, 0);
-          transform: translate(0, 0);
-  opacity: 1;
 }
 
 .our_projects {
@@ -1054,6 +1043,44 @@ h2.element-show {
   50% {
     -webkit-transform: translateY(2%);
             transform: translateY(2%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes expandUpRotete {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  30% {
+    -webkit-transform: translateY(-8%);
+            transform: translateY(-8%);
+  }
+  90% {
+    -webkit-transform: translateY(2%) rotateY(360deg);
+            transform: translateY(2%) rotateY(360deg);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes expandUpRotete {
+  0% {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+  30% {
+    -webkit-transform: translateY(-8%);
+            transform: translateY(-8%);
+  }
+  90% {
+    -webkit-transform: translateY(2%) rotateY(360deg);
+            transform: translateY(2%) rotateY(360deg);
   }
   100% {
     -webkit-transform: translateY(0);
